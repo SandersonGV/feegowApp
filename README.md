@@ -1,4 +1,4 @@
-# oque é o projeto
+# o que é o projeto
 projeto feito para o teste da feegow
 
 # funcionalidades
@@ -25,20 +25,19 @@ no banco o registro salvo
 
 # como rodar
 
-### instale o php 
-1 - http://windows.php.net/download e baixar a versão do PHP de acordo com o seu sistema
+você vai precisar do 
+- php
+- mysql (Use Legacy Authentication Method)
+- composer
+- laravel (composer global require laravel/installer)
 
-2 - Baixe o arquivo zip e extraia o mesmo para a pasta C:\php.
+1- Digite o commando "composer install". Ele vai instalar todos os pacotes php necessários.
 
-3 - instalar o Visual C++ Redistributable for Visual Studio 2015 x86 or x64 http://www.microsoft.com/en-us/download/details.aspx?id=48145
+2- Digite o commando "php artisan key:generate". Esse vai gerar uma chave para a aplicação.
 
-4 - adicionar a variável de ambiente PATH o local de instalação do PHP 7.1, para isso basta adicionar o seguinte a variável ;C:\php. Aperte a tecla Windows + Pause. Depois clique em “ Configuração avançadas do sistema”. Em seguida vá em “Variáveis de Ambiente”. Procure a variável “Path” e adicione o “C:\php”. De um OK em tudo para confirmar
+- no my sql crie um database chamado "dbfeegow"
+- no arquivo .env coloque as credenciais do seu banco
+- rode o camndo php artisan migrate
+- depois o monando php artisan serve
 
-5 - acessar a pasta C:\php e renomear o arquivo php.ini e tirar os comentários da seguinte linha: extension=php_pdo_mysql.dll
-
-### instale o composer
-1 - baixe e instale o composer https://getcomposer.org/Composer-Setup.exe
-
-### laravel
-### instale o mysql
-no terminal instale o laravel
+pronto!
